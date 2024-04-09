@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hosting Landing Page</title>
-        <link rel="stylesheet" href="./CSS/style.css" />
+        <link rel="stylesheet" href="./style.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -14,63 +14,61 @@
             referrerpolicy="no-referrer"
         />
     </head>
-    <body>
-        <div class="container">
-            <nav class="navbar">
+    <body >
+        <div class="container" >
+            <nav class="navbar md:pt-11 flex justify-around  pt-5">
                 <div class="logo">
-                    <img src="./assets/Logo.png" alt="logo" />
+                    <img class="h-9" src="./assets/Logo.png" alt="logo" />
                 </div>
-
-                <div class="hamburger">
+                <div class="hamburger md:hidden">
                     <svg viewBox="0 0 100 80" width="30" height="30">
                         <rect width="100" height="10"></rect>
                         <rect y="30" width="100" height="10"></rect>
                         <rect y="60" width="100" height="10"></rect>
                     </svg>
                 </div>
-
-                <ul class="mobile-list">
-                    <li class="list-item">Home</li>
+                
+                <ul class="mobile-list md:hidden ">
+                    <li class="list-item font-bold">Home</li>
                     <li class="list-item">Domain</li>
                     <li class="list-item">Hosting</li>
                     <li class="list-item">Features</li>
                     <li class="list-item">Pricing</li>
                     <li class="list-item">About Us</li>
                     <li class="list-item">
-                        <button class="btn-outline">Register Now</button>
+                        <button class="btn-outline  px-2  border-none bg-sky-600 rounded-xl text-white " >Register Now</button>
                     </li>
                 </ul>
-
-                <ul class="list">
-                    <li class="list-item">Home</li>
-                    <li class="list-item">Domain</li>
-                    <li class="list-item">Hosting</li>
-                    <li class="list-item">Features</li>
-                    <li class="list-item">Pricing</li>
-                    <li class="list-item">About Us</li>
-                    <li class="list-item">
-                        <button class="btn-outline">Register Now</button>
+                <ul class="list items-center md:flex hidden pl-28">
+                    <li class="list-item  mr-4 font-bold">Home</li>
+                    <li class="list-item  mr-4">Domain</li>
+                    <li class="list-item  mr-4">Hosting</li>
+                    <li class="list-item  mr-4">Features</li>
+                    <li class="list-item  mr-4">Pricing</li>
+                    <li class="list-item  mr-4">About Us</li>
+                    <li class="list-item  mr-4">
+                        <button class="btn-outline px-4 py-1 border-2 border-sky-300 rounded-xl" >Register Now</button>
                     </li>
                 </ul>
             </nav>
-            <section class="hero">
-                <div class="hero-left">
-                    <h1>
+            <section class="hero md:flex justify-between md:pt-9 m-11">
+                <div class="hero-left md:ml-16">
+                    <h1 class="text-4xl font-bold pt-5 md:text-5xl">
                         Great Website Start <br />
                         with unlimited <br />
                         Hosting
                     </h1>
-                    <p>
+                    <p class="text-gray-700 font-bold mt-7">
                         We provide the best offer of unlimited web hosting. The
                         most complete <br />
                         features, affordable prices, and 24/7 technical support
                         at your <br />
                         disposal.
                     </p>
-                    <button class="btn btn-large">Choose Package</button>
+                    <button class="btn btn-large px-6 bg-cyan-600 text-white py-2 border-2 rounded-xl mt-9">Choose Package</button>
                 </div>
-                <div class="hero-right">
-                    <img src="./assets/server.svg" alt="image" />
+                <div class="hero-right ">
+                    <img class="h-[450px]" src="./assets/server.svg" alt="image" />
                 </div>
             </section>
 
@@ -266,7 +264,6 @@
                             <button class="btn-pricing">Chose Plan</button>
                         </div>
                     </div>
-
                     <!-- pricing card 1 -->
                     <div class="pricing-card">
                         <div class="card-heading">
