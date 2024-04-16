@@ -14,13 +14,13 @@
             referrerpolicy="no-referrer"
         />
     </head>
-    <body >
-        <div class="container" >
-            <nav class="navbar md:pt-11 flex justify-around  pt-5">
+    <body class="m-0 p-0">
+        <div class="container m-0 p-0" >
+            <nav class="navbar   flex flex-wrap justify-around w-full pt-5 items-center md:pt-11">
                 <div class="logo">
-                    <img class="h-9" src="./assets/Logo.png" alt="logo" />
+                    <img class="h-9" src="./assets/Logo.png" alt="logo"/> 
                 </div>
-                <div class="hamburger md:hidden">
+                <div class="hamburger hidden">
                     <svg viewBox="0 0 100 80" width="30" height="30">
                         <rect width="100" height="10"></rect>
                         <rect y="30" width="100" height="10"></rect>
@@ -28,7 +28,7 @@
                     </svg>
                 </div>
                 
-                <ul class="mobile-list md:hidden ">
+                <ul class="mobile-list  md:hidden ">
                     <li class="list-item font-bold">Home</li>
                     <li class="list-item">Domain</li>
                     <li class="list-item">Hosting</li>
@@ -51,7 +51,7 @@
                     </li>
                 </ul>
             </nav>
-            <section class="hero md:flex justify-between md:pt-9 m-11">
+            <section class="hero flex flex-col-reverse text-1xl md:flex md:flex-row justify-between md:pt-9 m-11 ">
                 <div class="hero-left md:ml-16">
                     <h1 class="text-4xl font-bold pt-5 md:text-5xl">
                         Great Website Start <br />
@@ -68,15 +68,15 @@
                     <button class="btn btn-large px-6 bg-cyan-600 text-white py-2 border-2 rounded-xl mt-9">Choose Package</button>
                 </div>
                 <div class="hero-right ">
-                    <img class="h-[450px]" src="./assets/server.svg" alt="image" />
+                    <img class="h-[360] md:h-[450px]" src="./assets/server.svg" alt="image" />
                 </div>
             </section>
 
-            <section class="testing md:flex justify-around p-14 ">
+            <section class="testing  p-5 items-center md:flex justify-around md:py-16 gap-5">
                 <div class="testing-left">
                     <img src="./assets/testing.svg" alt="testing" class="h-80" />
                 </div>
-                <div class="testing-right ">
+                <div class="testing-right items-center">
                     <h2 class="text-4xl font-bold pt-5 md:text-5xl">
                         We Provide the best <br />
                         quality with low cost
@@ -93,9 +93,9 @@
             </section>
 
             <!-- technical-section -->
-            <section class="technical-section  md:flex justify-around p-14">
+            <section class="technical-section p-5 md:flex justify-around md:p-14">
                 <div class="technical-section-left">
-                    <h2 class="text-4xl font-bold pt-5 md:text-5xl">
+                    <h2 class="text-3xl font-bold pt-5 md:text-5xl">
                         Number 1 Technical <br />
                         Support in Indpnesia
                     </h2>
@@ -120,8 +120,8 @@
 
             <!-- services section -->
             <section class="services-section  px-5">
-                <div class="services-headline md:flex justify-around p-16">
-                    <h2  class="text-4xl font-bold pt-5 md:text-5xl">
+                <div class="services-headline md:flex justify-around md:p-16">
+                    <h2  class="text-3xl font-bold md:pt-5 md:text-5xl">
                         Services We Provide <br />
                         At ThorHosting
                     </h2>
@@ -216,11 +216,11 @@
             </section>
 
             <!-- pricing section -->
-            <section class="pricing-wrapper bg-sky-600 py-10 ">
+            <section class="pricing-wrapper bg-sky-600 py-10  w-full">
                 <h2 class=" text-center text-3xl text-white pb-8">Flexible & Transparent Pricing</h2>
-                <div class="pricing   md:flex justify-around ">
+                <div class="pricing   flex justify-evenly flex-wrap">
                     <!-- pricing card 1 -->
-                    <div class="pricing-card  w-[300px] mb-1 bg-white md:bg-white rounded p-5 ">
+                    <div class="pricing-card  w-[300px] mt-5 bg-white md:bg-white rounded p-5 ">
                         <div class="card-heading">
                             <h4 class="text-2xl font-bold">Starter Pack</h4>
                             <p  class="text-gray-700 font-medium my-2">Suitable for beginners</p>
@@ -266,7 +266,7 @@
                         </div>
                     </div>
                     <!-- pricing card 1 -->
-                    <div class="pricing-card w-[300px] mb-1 bg-white rounded  ">
+                    <div class="pricing-card w-[300px] mt-5 bg-white rounded  ">
                         <div class="card-heading bg-black rounded p-5">
                             <h4 class="text-2xl font-bold text-white">Popular Packages</h4>
                             <p class="text-white font-light my-2">Suitable for company, orginazation</p>
@@ -313,7 +313,7 @@
                     </div>
 
                     <!-- pricing card 1 -->
-                    <div class="pricing-card  w-[300px] mb-1 bg-white   p-5 rounded">
+                    <div class="pricing-card  w-[300px] mt-5 bg-white   p-5 rounded">
                         <div class="card-heading">
                             <h4 class="text-2xl font-bold">Buisness package</h4>
                             <p class="text-gray-700 font-medium my-2">Suitable for buisness websites</p>
@@ -361,45 +361,45 @@
                 </div>
             </section>
 
-            <!-- customer section -->
-            <section class="customer-section text-center mt-10">
+            <!-- customer section --> 
+            <section class="customer-section text-center items-center my-10 ">
                 <h1 class="text-3xl font-bold">Our Customer Love Us</h1>
-                <p class="font-medium text-gray-600 p-10">
+                <p class="font-medium  p-10">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Possimus tempora ducimus explicabo optio quae. <br />
                     Facere quam perspiciatis maxime reprehenderit rem?
                 </p>
-                <div class="md:flex ">
+                <div class=" customer-cards flex flex-wrap items-center justify-evenly">
                     <!-- card 1 -->
-                    <div class=" bg-slate-400 shadow rounded ">
-                        <p class="text-sm text-left">
+                    <div class="customer-card bg-slate-100 shadow rounded w-[600px] h-[300px] p-8 mt-4 ">
+                        <p class="text-sm text-left pb-8">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Obcaecati deleniti repudiandae facere, iusto
                             quo voluptas labore commodi ducimus delectus ullam
                             id cumque impedit odit.
                         </p>
-                        <div class="customer-info flex justify-items-start ">
-                            <div class="div">
+                        <div class="customer-info flex gap-5 ">
+                            <div class="">
                                 <img
                                     src="./assets/profile-holder.png"
                                     alt="image"
                                 />
                             </div>
-                            <div class="info px-5">
+                            <div class="info ">
                                 <h5 class=" font-bold">Michael Andrew</h5>
                                 <p>CEO apple inc.</p>
                             </div>
                         </div>
                     </div>
                     <!-- card 1 -->
-                    <div class="customer-card  ">
-                        <p>
+                    <div class="customer-card bg-slate-100 shadow rounded w-[600px] h-[300px] p-8 mt-4">
+                        <p class="text-sm text-left pb-8">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Obcaecati deleniti repudiandae facere, iusto
                             quo voluptas labore commodi ducimus delectus ullam
                             id cumque impedit odid.
                         </p>
-                        <div class="customer-info flex p-5 justify-between">
+                        <div class="customer-info flex gap-5 ">
                             <div class="div">
                                 <img
                                     src="./assets/profile-holder.png"
@@ -413,8 +413,8 @@
                         </div>
                     </div>
                     <!-- card 1 -->
-                    <div class="customer-card">
-                        <p>
+                    <div class="customer-card bg-slate-100 shadow rounded w-[600px] h-[300px] p-8 mt-4">
+                        <p class="text-sm text-left pb-8">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Obcaecati deleniti repudiandae facere, iusto
                             quo voluptas labore commodi ducimus delectus ullam
@@ -422,7 +422,7 @@
                             sunt repellat illum repellendus. Ut laborum, ipsum
                             ab rerum velit nulla!
                         </p>
-                        <div class="customer-info flex p-5 justify-between">
+                        <div class="customer-info flex gap-5 ">
                             <div class="div">
                                 <img
                                     src="./assets/profile-holder.png"
@@ -436,8 +436,8 @@
                         </div>
                     </div>
                     <!-- card 1 -->
-                    <div class="customer-card">
-                        <p>
+                    <div class="customer-card bg-slate-100 shadow rounded w-[600px] h-[300px] p-8 mt-4">
+                        <p class="text-sm text-left pb-8">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Obcaecati deleniti repudiandae facere, iusto
                             quo voluptas labore commodi ducimus delectus ullam
@@ -445,7 +445,7 @@
                             sunt repellat illum repellendus. Ut laborum, ipsum
                             ab rerum velit nulla!
                         </p>
-                        <div class="customer-info flex p-5 justify-between">
+                        <div class="customer-info flex gap-5 ">
                             <div class="div">
                                 <img
                                     src="./assets/profile-holder.png"
@@ -492,8 +492,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="footer-navbar flex ">
-                            <div class="mx-5">
+                        <div class="footer-navbar flex flex-wrap gap-5">
+                            <div>
                                 <h5 class="font-bold">Menu</h5>
                                 <ul class="text-gray-700 font-medium my-5">
                                     <li>Home</li>
@@ -502,7 +502,7 @@
                                     <li>Contact Us</li>
                                 </ul>
                             </div>
-                            <div class=" mx-2 md:mx-5">
+                            <div>
                                 <h5  class="font-bold">Links</h5>
                                 <ul class="text-gray-700 font-medium my-5">
                                     <li>Parteners</li>
@@ -511,7 +511,7 @@
                                     <li>Community</li>
                                 </ul>
                             </div>
-                            <div class="mx-5">
+                            <div >
                                 <h5  class="font-bold">Overview</h5>
                                 <ul class="text-gray-700 font-medium my-5"> 
                                     <li>Terms & Conditions</li>
@@ -519,9 +519,9 @@
                                     <li>FAQ</li>
                                 </ul>
                             </div>
-                            <div class="mx-5">
+                            <div >
                                 <h5  class="font-bold">Social Media</h5>
-                                <ul class="flex justify-between py-5">
+                                <ul class="flex justify-between py-5 flex-wrap">
                                     <li>
                                         <img
                                             src="./assets/fb.svg"
@@ -554,12 +554,6 @@
             </div>
         </div>
 
-        <script>
-            const hamburger = document.querySelector(".hamburger");
-            const mobileNavBar = document.querySelector(".mobile-list");
-            hamburger.addEventListener("click", () => {
-                mobileNavBar.classList.toggle("show-navbar");
-            });
-        </script>
+        
     </body>
 </html>
